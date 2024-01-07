@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        #niv{
+            margin: 50;
+            padding: 50px;
+            width: 20px;
+            margin: auto;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-top: 30px;
+            border: 2px solid black;
+        }
+        #nav{
+            margin: 50;
+            padding: 50px;
+            width: 20px;
+            margin: auto;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-top: 30px;
+            border: 2px solid black;
+        }
+        #nev{
+            margin: 50;
+            padding: 50px;
+            width: 20px;
+            margin: auto;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-top: 30px;
+            border: 2px solid black;
+            
+        }
+        #btn1{
+            margin: auto;
+             cursor: pointer;
+             display: block;
+             margin-top: 10px;
+             color: black;
+             border-radius: 8px;
+             background-color: white;
+        }
+        #btn2{
+            margin: auto;
+             cursor: pointer;
+             display: block;
+             margin-top: 10px;
+             color: black;
+             border-radius: 8px;
+             background-color: white;
+        }
+        #btn3{
+            margin: auto;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+            color: black;
+            border-radius: 8px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="niv">
+        
+    </div>
+    <button id="btn1">ON</button>
+    <div id="nav">
+        
+    </div>
+    <button id="btn2">ON</button>
+    <div id="nev">
+        
+    </div>
+    <button id="btn3">ON</button>
+    
+    
+    
+    <script>
+let niv= document.getElementById("niv");
+let btn1=document.getElementById("btn1");
+btn1.addEventListener("click",()=>{
+    niv.style.cssText=`background-color:orange;box-shadow:1px 1px 50px red; transition:0.2s;`;
+btn1.innerHTML="Off"
+});
+let nav= document.getElementById("nav");
+let btn2=document.getElementById("btn2");
+btn2.addEventListener("click",()=>{
+    nav.style.cssText=`background-color:pink;box-shadow:1px 1px 50px skyblue; transition:0.2s;`;
+btn2.innerHTML="Off"
+});
+let nev= document.getElementById("nev");
+let btn3=document.getElementById("btn3");
+btn3.addEventListener("click",()=>{
+    nev.style.cssText=`background-color:lightgreen;box-shadow:1px 1px 50px green; transition:0.2s;`;
+btn3.innerHTML="Off"
+});
+    </script>
+</body>
+</html>
